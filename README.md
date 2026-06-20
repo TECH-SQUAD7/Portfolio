@@ -11,6 +11,10 @@ npm run dev
 
 Open `http://localhost:3000`.
 
+## Deploy
+
+This repo includes a GitHub Actions workflow for GitHub Pages. After pushing to `main`, enable Pages with GitHub Actions as the source if GitHub asks for it.
+
 ## Notes
 
 - The music card/track section is intentionally removed.
