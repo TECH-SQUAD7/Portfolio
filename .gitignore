@@ -1,6 +1,7 @@
 .next
 node_modules
 out
+out/
 dist
 .env*
 *.log
