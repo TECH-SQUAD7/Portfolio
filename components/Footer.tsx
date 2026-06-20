@@ -24,8 +24,16 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap gap-3">
-            <a href="mailto:hello@rajat.dev" className="rounded-full bg-aura px-6 py-3 text-sm font-bold text-white shadow-glow">
+            <a href="mailto:rajatyt147@gmail.com" className="rounded-full bg-aura px-6 py-3 text-sm font-bold text-white shadow-glow">
               Contact Rajat
+            </a>
+            <a
+              href="https://x.com/founder_btw"
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-white/80 bg-white/70 px-6 py-3 text-sm font-bold text-ink transition hover:text-aura"
+            >
+              X @founder_btw
             </a>
             <a href="#home" className="rounded-full border border-white/80 bg-white/70 px-6 py-3 text-sm font-bold text-ink">
               Back to top
