@@ -1,0 +1,147 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --ink: #071338;
+  --paper: #f7f9ff;
+  --line: rgba(88, 112, 205, 0.18);
+  --font-display: "Cormorant Garamond", "Georgia", "Times New Roman", serif;
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--paper);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 18% 8%, rgba(255, 255, 255, 0.96), transparent 28rem),
+    radial-gradient(circle at 82% 16%, rgba(147, 188, 255, 0.5), transparent 36rem),
+    linear-gradient(135deg, #fbfcff 0%, #edf4ff 42%, #dfe9ff 100%);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+::selection {
+  background: rgba(74, 99, 255, 0.2);
+}
+
+.glass {
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.78), rgba(236, 243, 255, 0.48));
+  box-shadow: 0 24px 80px rgba(56, 76, 139, 0.16);
+  backdrop-filter: blur(24px);
+}
+
+.deep-glass {
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: linear-gradient(145deg, rgba(18, 28, 73, 0.72), rgba(41, 59, 120, 0.46));
+  box-shadow: 0 26px 90px rgba(24, 42, 101, 0.25);
+  backdrop-filter: blur(26px);
+}
+
+.hairline {
+  background-image:
+    linear-gradient(rgba(88, 112, 205, 0.11) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(88, 112, 205, 0.11) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.cloud {
+  position: absolute;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  filter: blur(12px);
+}
+
+.star-glow {
+  filter: drop-shadow(0 0 12px rgba(82, 103, 255, 0.5));
+}
+
+.paper-plane {
+  width: 0;
+  height: 0;
+  border-left: 22px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 12px solid rgba(255, 255, 255, 0.9);
+  filter: drop-shadow(0 8px 12px rgba(23, 46, 107, 0.22));
+  transform: rotate(-18deg);
+}
+
+.anime-silhouette {
+  position: absolute;
+  right: 18%;
+  bottom: 14%;
+  width: 96px;
+  height: 176px;
+  z-index: 4;
+}
+
+.anime-silhouette::before {
+  content: "";
+  position: absolute;
+  left: 26px;
+  top: 0;
+  width: 46px;
+  height: 48px;
+  border-radius: 48% 52% 45% 55%;
+  background: #0a163d;
+  box-shadow:
+    -13px -3px 0 -4px #0a163d,
+    13px -5px 0 -5px #0a163d,
+    3px 43px 0 -16px #eaf1ff;
+}
+
+.anime-silhouette::after {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 45px;
+  width: 40px;
+  height: 106px;
+  border-radius: 24px 24px 18px 18px;
+  background: linear-gradient(180deg, #eaf1ff 0 42%, #101f55 43% 100%);
+  box-shadow:
+    -18px 34px 0 -11px #101f55,
+    18px 31px 0 -11px #101f55,
+    36px 4px 0 -6px #0c1845;
+}
+
+.balcony-line {
+  position: absolute;
+  inset-inline: 8%;
+  bottom: 18%;
+  height: 2px;
+  z-index: 3;
+  background: linear-gradient(90deg, transparent, rgba(8, 19, 56, 0.28), transparent);
+}
+
+.balcony-line::before,
+.balcony-line::after {
+  content: "";
+  position: absolute;
+  bottom: -74px;
+  width: 2px;
+  height: 74px;
+  background: rgba(8, 19, 56, 0.18);
+}
+
+.balcony-line::before {
+  left: 18%;
+}
+
+.balcony-line::after {
+  right: 22%;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
